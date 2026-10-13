@@ -33,7 +33,7 @@ jobs:
 
       - name: Run Bandit Scan
         run: |
-          bandit -r .
+          bandit -r(host="0.0.0.0", port=5000)
 
       ################################################
       # INSTALL DEPENDENCIES
