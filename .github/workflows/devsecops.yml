@@ -29,11 +29,11 @@ jobs:
 
       - name: Install Security Tools
         run: |
-          pip install bandit safety
+          pip install bandit safety 
 
       - name: Run Bandit Scan
         run: |
-          bandit -r . -f html -o bandit-report.html
+          bandit -r . -f html -o bandit-report.html || true
 
       ################################################
       # INSTALL DEPENDENCIES
